@@ -2,7 +2,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  namespace: default
+  namespace: hotstar1
   name: ingress
   annotations:
     kubernetes.io/ingress.class: alb
