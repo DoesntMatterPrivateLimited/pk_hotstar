@@ -8,8 +8,8 @@ metadata:
     kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/subnets: public_subnet_one,public_subnet_two
-    alb.ingress.kubernetes.io/certificate-arn: acm_ssl_arn
+    alb.ingress.kubernetes.io/subnets: subnet-0f500263aa83cb317,	subnet-057bc115c8cf23969
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:992382496367:certificate/649469a3-becc-4d20-8b04-feced113e264
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS":443}]'
     alb.ingress.kubernetes.io/group.name: app
     alb.ingress.kubernetes.io/actions.ssl-redirect: >-
@@ -29,14 +29,14 @@ spec:
      - host: hackerboypk.online  ##Replace the host value with your desired custom domain 
        http:
         paths:
-          - path: /
+          - path: /hotstar
             pathType: Prefix
             backend:
              service:
               name: hotstar-service
               port:
                name: use-annotation
-          - path: /
+          - path: /hotstar
             pathType: Prefix
             backend:
               service:
