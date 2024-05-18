@@ -26,20 +26,20 @@ metadata:
         }
 spec:
   rules:
-     - host: hackerboypk.online  ##Replace the host value with your desired custom domain 
+     - host: "hackerboypk.online"  ##Replace the host value with your desired custom domain 
        http:
         paths:
-          - path: /hotstar
+          - path: "/hotstar"
             pathType: Prefix
             backend:
              service:
               name: hotstar-service
               port:
                name: use-annotation
-          - path: /hotstar
+          - path: "/hotstar"
             pathType: Prefix
             backend:
               service:
                 name: hotstar-service ##Replace service name example with SVC that you created during the sample application deployment
                 port:
-                  number: 80 ##Replace 80 with application port number
+                  number: 3000 ##Replace 80 with application port number
