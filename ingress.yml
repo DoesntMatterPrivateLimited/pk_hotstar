@@ -26,7 +26,7 @@ metadata:
         }
 spec:
   rules:
-     - host: "hotstar.hackerboypk.online"  ##Replace the host value with your desired custom domain 
+     - host: "hackerboypk.online"  ##Replace the host value with your desired custom domain 
        http:
         paths:
           - path: "/hotstar/*"
