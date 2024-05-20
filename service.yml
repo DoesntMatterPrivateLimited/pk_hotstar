@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hotstar-service
-  namespace: hotstar1
+  namespace: star
 spec:
   selector:
     app: hotstar
