@@ -36,7 +36,7 @@ spec:
               name: hotstar-service
               port:
                name: use-annotation
-          - path: "/hotstar"
+          - path: "/hotstar/*"
             pathType: Prefix
             backend:
               service:
