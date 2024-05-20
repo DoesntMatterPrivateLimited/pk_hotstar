@@ -29,7 +29,7 @@ spec:
      - host: "hotstar.hackerboypk.online"  ##Replace the host value with your desired custom domain 
        http:
         paths:
-          - path: "/hotstar"
+          - path: "/hotstar/*"
             pathType: Prefix
             backend:
              service:
