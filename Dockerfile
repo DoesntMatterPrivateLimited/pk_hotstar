@@ -2,16 +2,17 @@
 FROM node:alpine
 
 # Create and set the working directory inside the container
-WORKDIR /app
+WORKDIR /app/hotstar
+
 
 # Copy package.json and package-lock.json to the working directory
-COPY package.json package-lock.json /app/
+COPY package.json package-lock.json /app/hotstar
 
 # Install dependencies
 RUN npm install
 
 # Copy the entire codebase to the working directory
-COPY . /app/
+COPY . /app/hotstar
 
 # Expose the port your app runs on (replace <PORT_NUMBER> with your app's actual port)
 EXPOSE 3000
