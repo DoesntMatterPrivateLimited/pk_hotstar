@@ -6,13 +6,13 @@ WORKDIR /app/hotstar
 
 
 # Copy package.json and package-lock.json to the working directory
-COPY package.json package-lock.json /app/hotstar
+COPY package.json package-lock.json /app/hotstar/
 
 # Install dependencies
 RUN npm install
 
 # Copy the entire codebase to the working directory
-COPY . /app/hotstar
+COPY . /app/hotstar/
 
 # Expose the port your app runs on (replace <PORT_NUMBER> with your app's actual port)
 EXPOSE 3000
